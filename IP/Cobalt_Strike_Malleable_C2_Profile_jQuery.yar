@@ -6,6 +6,7 @@ rule Cobalt_Strike_Malleable_C2_Profile_jQuery
     name = "Cobalt Strike Malleable C2 Profile - jQuery (Masquerade)"
     description = "Identifies IP addresses serving a self-signed SSL certificate consistent with a Cobalt Strike Beacon Malleable C2 profile masquerading as the legitiamte jQuery"
     reference = "https://github.com/threatexpress/malleable-c2/blob/master/jquery-c2.4.0.profile"
+    target_entity = "ip_address"
   condition:
     vt.net.ip.https_certificate.subject.common_name == "jquery.com" and
     (

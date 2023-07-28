@@ -6,6 +6,7 @@ rule APT32_SOUNDBITE_FQDN_Pattern
    name = "APT32 SOUNDBITE FQDN pattern"
    reference = "https://www.mandiant.com/resources/blog/cyber-espionage-apt32"
    description = "Matches on the naming scheme used for C2 servers for APT32's SOUNDBITE malware that performs C2 via DNS lookups."
+   target_entity = "domain"
  condition:
     vt.net.domain.new_domain and 
     (vt.net.domain.raw matches /^z\.[^.]{4,}\.[^.]+/)
