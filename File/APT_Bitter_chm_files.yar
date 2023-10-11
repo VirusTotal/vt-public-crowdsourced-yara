@@ -3,7 +3,7 @@ import "vt"
 rule APT_Bitter_chm_files {
   meta:
     name = "APT_Bitter_chm_files"
-    author = "Joseliyo Sanchez - VirusTotal"
+    author = "Joseliyo Sanchez - @Joseliyo_Jstnk"
     description = "Find chm files related to APT Bitter used during their operations"
     target_entity = "file"
     //vt_intelligence_query = behavior_processes:"%Comspec%" behavior_processes:"schtasks.exe" tag:chm
