@@ -6,7 +6,7 @@ rule Gamaredon_Documents_DavSetCookie_RU {
     author = "Joseliyo Sanchez - @Joseliyo_Jstnk"
     description = "Documents related to Gamaredon threat actor abusing of DavSetCookie to load remote templates"
     target_entity = "file"
-	sha256 = "01d27b175fcc3c7917223abe51e55adbb69d052bfccc189d30df2b4cb2c35480"
+    sha256 = "01d27b175fcc3c7917223abe51e55adbb69d052bfccc189d30df2b4cb2c35480"
     // vt_intelligence_query = (behavior_processes:*.ru* and behavior_processes:*DavSetCookie* and behavior_processes:*http*) and (behavior_network:*.ru* or embedded_domain:*.ru* or embedded_url:*.ru*) and (type:document)
 
   condition:
