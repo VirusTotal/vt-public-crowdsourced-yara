@@ -7,6 +7,7 @@ rule RomCom_MustangPanda_Similar_Behaviors
         description = "Rule to detect samples related to RomCom RAT and also Mustang Panda, since both are sharing common behaviors"  
         author = "Joseliyo Sanchez - @Joseliyo_Jstnk"
         target_entity  = "file"
+		sha256 = "6d3ab9e729bb03ae8ae3fcd824474c5052a165de6cb4c27334969a542c7b261d"
         // vt_intelligence_query1 = ((behavior_processes:".dll,fwdTst") OR (behavior_processes:"dll\",#1" behavior_processes:"\\Public\\Libraries\\") OR (behavior_processes:*.dll0* behavior_processes:"\\Public\\Libraries\\")) AND ((behaviour_files:*\\Public\\Libraries\\*) AND (behavior:*rundll32.exe*))
         // vt_intelligence_query2 = ((behavior_processes:".dll,fwdTst") OR (behavior_processes:"dll\",#1" behavior_processes:"\\Public\\Libraries\\") OR (behavior_processes:*.dll0* behavior_processes:"\\Public\\Libraries\\") OR (behavior_processes:*.dll,main* behavior_processes:"\\Public\\Libraries\\")) AND ((behaviour_files:*\\Public\\Libraries\\*) AND (behavior:*rundll32.exe*))
 
@@ -70,6 +71,4 @@ rule RomCom_MustangPanda_Similar_Behaviors
         )
 
     and vt.metadata.new_file
-
-
 }
